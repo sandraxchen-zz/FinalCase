@@ -633,13 +633,13 @@ rev_donothing = np.multiply(rev_simulation(1,1), list_prices).sum()
 rev_donothing
 
 
-# In[264]:
+# In[1]:
 
 
 def print_revresults(sim): #input the results of the simulation
     revperprice = np.multiply(sim, list_prices)
     totalrev = revperprice.sum()
-    revdiff = (totalrev - rev_donothing)/totalrev
+    revdiff = (totalrev - rev_donothing)/rev_donothing
 
     print('Take Up:')
     print(sim)
